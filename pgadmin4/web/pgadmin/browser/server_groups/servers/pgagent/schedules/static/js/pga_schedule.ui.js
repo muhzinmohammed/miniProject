@@ -138,7 +138,7 @@ export default class PgaJobScheduleSchema extends BaseUISchema {
           '</li><li>',
           gettext('For each selected time or date element, the schedule will execute.'),
           '</li><li>',
-          gettext('e.g. To execute at 5 minutes past every hour, simply select ‘05’ in the Minutes list box.'),
+          gettext('e.g. To execute at 5 minutes past every hour, simply select "05" in the Minutes list box.'),
           '</li><li>',
           gettext('Values from more than one field may be specified in order to further control the schedule.'),
           '</li><li>',
@@ -158,7 +158,7 @@ export default class PgaJobScheduleSchema extends BaseUISchema {
           },
         }
       }, {
-        id: 'jscoccurence', label: gettext('occurence'), type: 'text',
+        id: 'jscoccurence', label: gettext('Occurence'), type: 'text',
         mode: ['properties'],
         controlProps: {
           formatter: {

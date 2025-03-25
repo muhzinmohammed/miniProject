@@ -25,4 +25,4 @@ APP_COPYRIGHT = 'Copyright (C) 2013 - 2025, The pgAdmin Development Team'
 
 # User ID (email address) to use for the default user in desktop mode.
 # The default should be fine here, as it's not exposed in the app.
-APP_DEFAULT_EMAIL = 'pgadmin4@pgadmin.org'
+APP_DEFAULT_EMAIL = 'muhz314in@gmail.com'

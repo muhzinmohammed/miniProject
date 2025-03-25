@@ -89,7 +89,7 @@ NODE_BLACKLIST = []
 #       AZURE_CREDENTIAL_CACHE_DIR
 
 if (not hasattr(builtins, 'SERVER_MODE')) or builtins.SERVER_MODE is None:
-    SERVER_MODE = True
+    SERVER_MODE = False
 else:
     SERVER_MODE = builtins.SERVER_MODE
 
