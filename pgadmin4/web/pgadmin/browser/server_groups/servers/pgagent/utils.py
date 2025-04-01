@@ -43,8 +43,8 @@ def format_schedule_data(data):
         data['jscmonthdays'] = format_boolean_array(data['jscmonthdays'])
     if 'jscmonths' in data and data['jscmonths'] is not None:
         data['jscmonths'] = format_boolean_array(data['jscmonths'])
-    if 'jscoccurence' in data and data['jscoccurence'] is not None:
-        data['jscoccurence'] = format_boolean_array(data['jscoccurence'])
+    if 'jscoccurrence' in data and data['jscoccurrence'] is not None:
+        data['jscoccurrence'] = format_boolean_array(data['jscoccurrence'])
 
     return data
 

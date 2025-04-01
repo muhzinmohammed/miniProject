@@ -1,6 +1,6 @@
 import gettext from 'sources/gettext';
 import { BaseUISchema } from '../../../../../../../static/js/SchemaView';
-import { WEEKDAYS, PGAGENT_MONTHDAYS, MONTHS, HOURS, MINUTES, OCCURENCE } from '../../../../../../static/js/constants';
+import { WEEKDAYS, PGAGENT_MONTHDAYS, MONTHS, HOURS, MINUTES, OCCURRENCE } from '../../../../../../static/js/constants';
 
 
 const BooleanArrayFormatter = {
@@ -76,13 +76,13 @@ export class TimesSchema extends BaseUISchema {
 
 export class DaysSchema extends BaseUISchema {
   constructor(initValues={}, schemaConfig={
-    weekdays: {}, monthdays: {}, months: {}, occurence: {}
+    weekdays: {}, monthdays: {}, months: {}, occurrence: {}
   }) {
     super({
       jscweekdays: _.map(WEEKDAYS, function() { return false; }),
       jscmonthdays: _.map(PGAGENT_MONTHDAYS, function() { return false; }),
       jscmonths: _.map(MONTHS, function() { return false; }),
-      jscoccurence: _.map(OCCURENCE, function() { return false; }),
+      jscoccurrence: _.map(OCCURRENCE, function() { return false; }),
       ...initValues,
     });
 
@@ -116,13 +116,13 @@ export class DaysSchema extends BaseUISchema {
         },
         options: MONTHS, ...(this.schemaConfig.months??{})
       }, {
-        id: 'jscoccurence', label: gettext('Occurence'), type: 'select',
+        id: 'jscoccurrence', label: gettext('Occurrence'), type: 'select',
         group: gettext('Days'),
         controlProps: { allowClear: true, multiple: true, allowSelectAll: true,
-          placeholder: gettext('Select the occurence...'),
+          placeholder: gettext('Select the occurrence...'),
           formatter: BooleanArrayFormatter,
         },
-        options: OCCURENCE, ...(this.schemaConfig.occurence??{})
+        options: OCCURRENCE, ...(this.schemaConfig.occurrence??{})
       }
     ];
   }

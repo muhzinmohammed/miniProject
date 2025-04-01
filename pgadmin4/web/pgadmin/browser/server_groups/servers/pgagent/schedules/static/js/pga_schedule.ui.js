@@ -11,7 +11,7 @@ import gettext from 'sources/gettext';
 import BaseUISchema from 'sources/SchemaView/base_schema.ui';
 import { isEmptyString } from 'sources/validators';
 import moment from 'moment';
-import { WEEKDAYS, OCCURENCE, MONTHS, HOURS, MINUTES, PGAGENT_MONTHDAYS } from '../../../../../../static/js/constants';
+import { WEEKDAYS, OCCURRENCE, MONTHS, HOURS, MINUTES, PGAGENT_MONTHDAYS } from '../../../../../../static/js/constants';
 import { DaysSchema, TimesSchema } from './repeat.ui';
 
 export class ExceptionsSchema extends BaseUISchema {
@@ -73,7 +73,7 @@ export default class PgaJobScheduleSchema extends BaseUISchema {
       jscstart: null,
       jscend: null,
       jscweekdays: _.map(WEEKDAYS, function() { return false; }),
-      jscoccurence: _.map(OCCURENCE, function() {return false; }),
+      jscoccurrence: _.map(OCCURRENCE, function() {return false; }),
       jscmonthdays: _.map(PGAGENT_MONTHDAYS, function() { return false; }),
       jscmonths: _.map(MONTHS, function() { return false; }),
       jschours: _.map(HOURS, function() { return false; }),
@@ -158,12 +158,12 @@ export default class PgaJobScheduleSchema extends BaseUISchema {
           },
         }
       }, {
-        id: 'jscoccurence', label: gettext('Occurence'), type: 'text',
+        id: 'jscoccurrence', label: gettext('Occurrence'), type: 'text',
         mode: ['properties'],
         controlProps: {
           formatter: {
             fromRaw: (backendVal)=> {
-              return obj.customFromRaw(backendVal, OCCURENCE);
+              return obj.customFromRaw(backendVal, OCCURRENCE);
             }
           },
         }

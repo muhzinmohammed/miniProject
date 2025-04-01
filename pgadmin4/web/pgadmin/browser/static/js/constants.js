@@ -80,7 +80,7 @@ export const WEEKDAYS = [
     {label: gettext('29th'), value: '29'}, {label: gettext('30th'), value: '30'},
     {label: gettext('31st'), value: '31'},
   ],
-  OCCURENCE = [
+  OCCURRENCE = [
     {label: gettext('1st'),value: '1'},
     {label: gettext('2nd'),value: '2'},
     {label: gettext('3rd'),value: '3'}, 
