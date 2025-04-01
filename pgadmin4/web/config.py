@@ -244,7 +244,7 @@ LOGIN_BANNER = ""
 ##########################################################################
 
 # Debug mode?
-DEBUG = False
+DEBUG = True
 
 # Application log level - one of:
 #   CRITICAL 50
@@ -254,7 +254,7 @@ DEBUG = False
 #   INFO     20
 #   DEBUG    10
 #   NOTSET    0
-CONSOLE_LOG_LEVEL = logging.WARNING
+CONSOLE_LOG_LEVEL = logging.DEBUG
 FILE_LOG_LEVEL = logging.WARNING
 
 # Log format.
